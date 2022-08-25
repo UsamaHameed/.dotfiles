@@ -42,3 +42,11 @@ vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
 
+
+-- Enable mouse mode
+vim.o.mouse = 'a'
+
+-- Case insensitive searching UNLESS /C or capital in search
+vim.o.ignorecase = true
+vim.o.smartcase = true
+
