@@ -33,3 +33,6 @@ end)
 nnoremap("<leader>f", function()
   vim.lsp.buf.format()
 end)
+
+nnoremap("<leader>n", "o<Esc>j")
+
