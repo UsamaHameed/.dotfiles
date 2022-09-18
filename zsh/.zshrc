@@ -103,3 +103,4 @@ source ~/.zsh_profile
 
 alias luamake=/home/usama/personal/lua-language-server/3rd/luamake/luamake
 
+alias mkcd='{ IFS= read -r d && mkdir "$d" && cd "$d"; } <<<'
