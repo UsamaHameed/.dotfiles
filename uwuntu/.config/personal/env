@@ -4,7 +4,7 @@
 # Required for x applications
 # setxkbmap -option caps:ctrl_modifier
 
-export STOW_FOLDERS="bin,nvim,tmux,uwuntu,personal,i3,zsh,xkb"
+export STOW_FOLDERS="bin,nvim,tmux,uwuntu,zsh"
 
 startMongo() {
     sudo systemctl start mongod

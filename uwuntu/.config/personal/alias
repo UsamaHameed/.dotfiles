@@ -21,7 +21,7 @@ alias eirc="nvim $XDG_CONFIG_HOME/i3/i3config"
 alias cvrc="cat $DOTFILES/vimrc/.vimrc"
 alias dotFileInstall="$DOTFILES/install"
 
-alias killBT="rfkill block bluetooth"
+alias kilbbBT="rfkill block bluetooth"
 alias unKillBT="rfkill unblock bluetooth"
 alias cclip="xclip -selection clipboard"
 alias pclip="xclip -selection clipboard"
