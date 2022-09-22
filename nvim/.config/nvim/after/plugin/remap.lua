@@ -36,3 +36,4 @@ end)
 
 nnoremap("<leader>n", "o<Esc>j")
 
+nnoremap("<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
