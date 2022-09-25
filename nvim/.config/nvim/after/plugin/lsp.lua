@@ -17,6 +17,18 @@ require("lspconfig").rust_analyzer.setup({
     --]]
 })
 
+require("lspconfig").gopls.setup({
+	cmd = { "gopls", "serve" },
+	settings = {
+		gopls = {
+			analyses = {
+				unusedparams = true,
+			},
+			staticcheck = true,
+		},
+	},
+})
+
 require("lspconfig").sumneko_lua.setup({
     settings = {
         Lua = {
