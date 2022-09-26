@@ -10,7 +10,7 @@ end
 -- stylua: ignore start
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  
+
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb' 
 
@@ -44,7 +44,7 @@ require('packer').startup(function(use)
   use("simrat39/symbols-outline.nvim")
 
   use("hrsh7th/cmp-buffer")
-  
+
   use("ThePrimeagen/harpoon")
 
   use("romgrk/nvim-treesitter-context")
