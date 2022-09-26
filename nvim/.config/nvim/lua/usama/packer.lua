@@ -47,6 +47,8 @@ require('packer').startup(function(use)
   
   use("ThePrimeagen/harpoon")
 
+  use("romgrk/nvim-treesitter-context")
+
   if is_bootstrap then
     require('packer').sync()
   end
