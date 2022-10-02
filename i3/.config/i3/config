@@ -180,4 +180,4 @@ bar {
         status_command i3status
 }
 
-exec bash ~/i3_start.sh
+exec bash ~/.config/i3/i3_start.sh
