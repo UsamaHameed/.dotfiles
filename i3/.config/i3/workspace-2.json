@@ -1,0 +1,41 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1383,
+       "width": 3436,
+       "x": 0,
+       "y": 0
+    },
+    "name": "Friends - Discord",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "class": "^discord$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 600,
+       "width": 800,
+       "x": 0,
+       "y": 0
+    },
+    "name": "Thunderbird",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "class": "^thunderbird$"
+       }
+    ],
+    "type": "con"
+}
+
