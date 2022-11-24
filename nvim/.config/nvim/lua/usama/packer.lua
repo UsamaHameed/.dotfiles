@@ -29,7 +29,6 @@ require('packer').startup(function(use)
   use { 'L3MON4D3/LuaSnip', requires = { 'saadparwaiz1/cmp_luasnip' } }
 
   use 'folke/tokyonight.nvim'
-  use 'nvim-lualine/lualine.nvim' 
   -- use 'lukas-reineke/indent-blankline.nvim'
   --
   use 'tpope/vim-sleuth' 
@@ -48,7 +47,15 @@ require('packer').startup(function(use)
   use("ThePrimeagen/harpoon")
 
   use("romgrk/nvim-treesitter-context")
+  
+  use("mfussenegger/nvim-dap")
+  use("rcarriga/nvim-dap-ui")
+  use("theHamsta/nvim-dap-virtual-text")
+  --use 'yriveiro/dap-go.nvim'
 
+  use {"nvim-lualine/lualine.nvim", requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
+
+  use("leoluz/nvim-dap-go")
   if is_bootstrap then
     require('packer').sync()
   end

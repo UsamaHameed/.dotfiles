@@ -34,6 +34,8 @@ nnoremap("<leader>f", function()
   vim.lsp.buf.format()
 end)
 
-nnoremap("<leader>n", "o<Esc>j")
-
 nnoremap("<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+
+nnoremap("<leader>o", "o<Esc>")
+nnoremap("<leader>O", "O<Esc>")
+
