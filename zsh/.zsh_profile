@@ -17,8 +17,8 @@ addToPathFront $HOME/.local/scripts
 addToPathFront $HOME/go/bin
 addToPathFront $HOME/personal/sumneko/bin
 
-# Where should I put you?
 bindkey -s ^f "tmux-sessionizer\n"
+bindkey -s ^g "tmux-sessionizer .dotfiles\n"
 
 catr() {
     tail -n "+$1" $3 | head -n "$(($2 - $1 + 1))"
