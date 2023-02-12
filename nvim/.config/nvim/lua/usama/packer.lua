@@ -70,7 +70,10 @@ require('packer').startup(function(use)
 
   use {"nvim-lualine/lualine.nvim", requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
 
+  use("folke/zen-mode.nvim")
+
   use("leoluz/nvim-dap-go")
+
   if is_bootstrap then
     require('packer').sync()
   end

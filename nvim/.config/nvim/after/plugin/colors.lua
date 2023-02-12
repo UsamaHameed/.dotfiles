@@ -37,8 +37,7 @@ function ColorMyPencils()
     })
 
 end
--- ColorMyPencils()
+ColorMyPencils()
 vim.g.tokyonight_style = "night"
 vim.cmd("colorscheme tokyonight")
--- Lua
 -- vim.cmd[[colorscheme tokyonight]]

@@ -244,6 +244,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/usama/.local/share/nvim/site/pack/packer/start/vim-sleuth",
     url = "https://github.com/tpope/vim-sleuth"
+  },
+  ["zen-mode.nvim"] = {
+    loaded = true,
+    path = "/home/usama/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
+    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
