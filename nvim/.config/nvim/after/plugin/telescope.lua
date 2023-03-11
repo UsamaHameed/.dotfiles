@@ -1,25 +1,12 @@
-local nnoremap = require("usama.keymap").nnoremap
+local telescope = require('telescope');
+local builtin = telescope.builtin;
 
-nnoremap("<leader>pf", function()
-  require('telescope.builtin').find_files()
+vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
+vim.keymap.set('n', '<C-p>', builtin.git_files, {})
+vim.keymap.set('n', '<leader>ps', function()
+	builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
+vim.keymap.set('n', '<leader>vh', builtin.help_tags, {})
+vim.keymap.set('n', '<leader>gm', telescope.extensions.git_worktree.create_git_worktree, {})
+vim.keymap.set('n', '<leader>gd', builtin.diagnostics, {})
 
-nnoremap("<C-p>", function()
-  require('telescope.builtin').git_files()
-end)
-
-nnoremap("<leader>ps", function()
-  require('telescope.builtin').grep_string({ search = vim.fn.input("Grep for > ") })
-end)
-
-nnoremap("<leader>vh", function()
-  require('telescope.help_tags').help_tags()
-end)
-
-nnoremap("<leader>gm", function()
-    require('telescope').extensions.git_worktree.create_git_worktree()
-end)
-
-nnoremap("<leader>gd", function()
-    require('telescope.builtin').diagnostics()
-end)
