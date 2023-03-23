@@ -11,7 +11,7 @@ const main = async () => {
     res.on("end", () => {
       const questions = JSON.parse(text);
       for (let i = 0; i < N; i++) {
-        console.log("\n", sample(questions).question);
+        console.log("\n", sample(questions.questions).question.en);
       }
     });
   });
