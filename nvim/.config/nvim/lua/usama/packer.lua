@@ -79,7 +79,7 @@ return require('packer').startup(function(use)
   use("eandrju/cellular-automaton.nvim")
   use("laytan/cloak.nvim")
 
-  use {"nvim-lualine/lualine.nvim", requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
+  use {"nvim-lualine/lualine.nvim", requires = { 'kyazdani42/nvim-web-devicons' }}
   -- needed to make :Rg work inside nvim
   use { 'junegunn/fzf', run = "fzf#install()" }
   use { 'junegunn/fzf.vim' }
