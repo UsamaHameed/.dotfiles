@@ -1,6 +1,6 @@
 i3-msg "workspace 1; append_layout /home/usama/.config/i3/workspace-1.json"
 # exec discord
-exec firefox &>dev/null & disown 
+exec google-chrome &>dev/null & disown
 sleep 3
 
 gnome-terminal
