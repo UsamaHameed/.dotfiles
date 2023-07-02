@@ -83,5 +83,11 @@ return require('packer').startup(function(use)
   -- needed to make :Rg work inside nvim
   use { 'junegunn/fzf', run = "fzf#install()" }
   use { 'junegunn/fzf.vim' }
-end)
 
+  use {
+    'goolord/alpha-nvim',
+    requires = {
+        'nvim-tree/nvim-web-devicons',
+    },
+  }
+end)

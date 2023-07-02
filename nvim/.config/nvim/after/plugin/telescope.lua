@@ -9,3 +9,4 @@ vim.keymap.set('n', '<leader>vh', builtin.help_tags, {})
 -- vim.keymap.set('n', '<leader>gm', require('telescope').extensions.git_worktree.create_git_worktree, {})
 vim.keymap.set('n', '<leader>gd', builtin.diagnostics, {})
 
+vim.keymap.set('n', '<leader>t', ':Telescope find_files hidden=true<CR>', {})
