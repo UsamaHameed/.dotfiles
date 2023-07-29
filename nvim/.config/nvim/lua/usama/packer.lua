@@ -19,7 +19,10 @@ return require('packer').startup(function(use)
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
 	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
+	  requires = {
+          {'nvim-lua/plenary.nvim'},
+          {'nvim-telescope/telescope-live-grep-args.nvim'}
+      },
   }
 
   use({
@@ -90,4 +93,14 @@ return require('packer').startup(function(use)
         'nvim-tree/nvim-web-devicons',
     },
   }
+  use({
+      "aaronhallaert/advanced-git-search.nvim",
+      requires = {
+          "nvim-telescope/telescope.nvim",
+          -- to show diff splits and open commits in browser
+          "tpope/vim-fugitive",
+          -- to open commits in browser with fugitive
+          "tpope/vim-rhubarb",
+      },
+  })
 end)
