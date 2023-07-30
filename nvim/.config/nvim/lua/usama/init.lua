@@ -11,6 +11,11 @@ function R(name)
     require("plenary.reload").reload_module(name)
 end
 
+-- fix for netrw not working with gx in gnome-terminal on linux
+vim.cmd([[
+    :let g:netrw_browsex_viewer= "xdg-open"
+]])
+
 autocmd('TextYankPost', {
     group = yank_group,
     pattern = '*',

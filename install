@@ -1,4 +1,4 @@
-#!/usr/bin/env bash 
+#!/usr/bin/env bash
 pushd $HOME/.dotfiles
 STOW_FOLDERS="nvim,zsh,bin,tmux,uwuntu,i3"
 
