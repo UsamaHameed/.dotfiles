@@ -1,3 +1,7 @@
+lsp:
+- ctrl+y to accept lsp suggestion, or jsut enter
+
+- * to search for the word under the cursor in the file
 tabs:
 - move between tabs with `gt` and `gT`
 - `nnn gt` for numbered tabs
@@ -15,3 +19,14 @@ netrw:
 - :e or % to create a file
 - R rename
 - D delete
+
+fugitive:
+- czz: stash changes
+- cza: pop
+- czA: force pop
+- dv: open conflicts side by side
+
+- yap: yank the paragraph
+- ctrl+w O, ctrl+w ctrl+o: close all windows
+- ctrl+w =, to resize equally
+
