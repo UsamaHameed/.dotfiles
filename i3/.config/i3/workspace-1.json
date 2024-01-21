@@ -1,9 +1,8 @@
 // vim:ts=4:sw=4:et
 {
     // splitv split container with 2 children
-    "border": "normal",
+    "border": "pixel",
     "floating": "auto_off",
-    "layout": "splitv",
     "percent": 0.306686046511628,
     "type": "con",
     "nodes": [
@@ -18,27 +17,7 @@
                "y": 0
             },
             "name": "Mozilla Firefox",
-            "percent": 0.50844475721323,
-            "swallows": [
-               {
-                "class": "^firefox$",
-                "window_role": "^browser$"
-               }
-            ],
-            "type": "con"
-        },
-        {
-            "border": "normal",
-            "current_border_width": 2,
-            "floating": "auto_off",
-            "geometry": {
-               "height": 1401,
-               "width": 1716,
-               "x": 0,
-               "y": 0
-            },
-            "name": "qojqva - Twitch — Mozilla Firefox",
-            "percent": 0.49155524278677,
+            "percent": 0.45,
             "swallows": [
                {
                 "class": "^firefox$",
@@ -51,7 +30,7 @@
 }
 
 {
-    "border": "normal",
+    "border": "pixel",
     "current_border_width": 2,
     "floating": "auto_off",
     "geometry": {
@@ -60,32 +39,11 @@
        "x": 0,
        "y": 0
     },
-    "name": "i3-save-tree --workspace 1 > ~/.i3/workspace-1.json",
-    "percent": 0.359980620155039,
+    "percent": 0.55,
     "swallows": [
        {
-        "class": "^Gnome\\-terminal$"
-       }
-    ],
-    "type": "con"
-}
-
-{
-    "border": "normal",
-    "current_border_width": 2,
-    "floating": "auto_off",
-    "geometry": {
-       "height": 691,
-       "width": 986,
-       "x": 0,
-       "y": 0
-    },
-    "name": "i3: Layout saving in i3 — Mozilla Firefox",
-    "percent": 0.333333333333333,
-    "swallows": [
-       {
-        "class": "^firefox$",
-        "window_role": "^browser$"
+        "class": "^Gnome\\-terminal$",
+        "title": ""
        }
     ],
     "type": "con"

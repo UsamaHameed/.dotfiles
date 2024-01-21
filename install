@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 pushd $HOME/.dotfiles
-STOW_FOLDERS="nvim,zsh,bin,tmux,uwuntu,i3"
+STOW_FOLDERS="nvim,zsh,bin,tmux,uwuntu,i3,regolith"
 
 for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
 do

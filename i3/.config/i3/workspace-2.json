@@ -1,26 +1,6 @@
 // vim:ts=4:sw=4:et
 {
-    "border": "normal",
-    "current_border_width": 2,
-    "floating": "auto_off",
-    "geometry": {
-       "height": 1383,
-       "width": 3436,
-       "x": 0,
-       "y": 0
-    },
-    "name": "Friends - Discord",
-    "percent": 0.5,
-    "swallows": [
-       {
-        "class": "^discord$"
-       }
-    ],
-    "type": "con"
-}
-
-{
-    "border": "normal",
+    "border": "pixel",
     "current_border_width": 2,
     "floating": "auto_off",
     "geometry": {

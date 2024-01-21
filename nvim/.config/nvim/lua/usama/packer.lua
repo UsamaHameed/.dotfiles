@@ -17,13 +17,14 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+	  'nvim-telescope/telescope.nvim', tag = '0.1.3',
 	  -- or                            , branch = '0.1.x',
 	  requires = {
           {'nvim-lua/plenary.nvim'},
           {'nvim-telescope/telescope-live-grep-args.nvim'}
       },
   }
+  use { 'sourcegraph/sg.nvim', run = 'nvim -l build/init.lua' }
 
   use({
 	  'rose-pine/neovim',
