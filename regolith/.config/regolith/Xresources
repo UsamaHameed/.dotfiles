@@ -1,3 +1,4 @@
 i3-wm.gaps.inner.size: 20
 i3-wm.gaps.outer.size: 0
+gnome.terminal.font:Fira Code Nerd Font Regular 16
 
