@@ -1,13 +1,33 @@
 #!/usr/bin/env bash
 pushd $HOME/.dotfiles
-STOW_FOLDERS="nvim,zsh,bin,tmux,uwuntu,i3,regolith"
+STOW_FOLDERS=""
+
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    STOW_FOLDERS="nvim,zsh,bin,tmux,uwuntu,i3,regolith3"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    STOW_FOLDERS="nvim,zsh,bin,tmux,uwuntu,i3"
+else
+    echo "Unknown OS"
+fi
+
+echo $STOW_FOLDERS
 
 for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
 do
-    echo "stow $folder"
+    echo "stowing $folder"
     stow -D $folder
     stow $folder
 done
+
+if [[ $1 == "work" ]]; then
+    echo "installing dotfiles for work"
+
+    echo "# work related config below" >> ~/.zshrc
+    cat ./work/.zshrc >> ~/.zshrc
+
+    echo "# work related config below" >> ~/.zsh_profile
+    cat ./work/.zshrc >> ~/.zsh_profile
+fi
 
 popd
 
