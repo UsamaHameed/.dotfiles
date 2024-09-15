@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh_profile
 
 alias mkcd='{ IFS= read -r d && mkdir "$d" && cd "$d"; } <<<'
+alias lg='{ IFS= read -r d && l | grep "$d" -i; } <<<'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
