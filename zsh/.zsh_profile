@@ -1,19 +1,11 @@
 export XDG_CONFIG_HOME=$HOME/.config
-VIM="nvim"
 
 PERSONAL=$XDG_CONFIG_HOME/personal
 source $PERSONAL/env
+
 for i in `find -L $PERSONAL`; do
     source $i
 done
-
-export DOTFILES=$HOME/.dotfiles
-
-addToPathFront $HOME/.local/.npm-global/bin
-addToPathFront $HOME/.local/bin
-addToPathFront $HOME/.local/go/bin
-addToPathFront $HOME/.local/scripts
-addToPathFront $HOME/go/bin
 
 bindkey -s ^f "tmux-sessionizer\n"
 bindkey -s ^g "tmux-sessionizer .dotfiles\n"

@@ -1,30 +1,6 @@
 #!/usr/bin/env zsh
 
-# Super cool keyboard stuffs.
-# Required for x applications
-# setxkbmap -option caps:ctrl_modifier
-
 export STOW_FOLDERS="bin,nvim,tmux,uwuntu,zsh"
-
-startMongo() {
-    sudo systemctl start mongod
-    sudo systemctl enable mongod
-}
-
-#increaseWatchers() {
-#    sudo sysctl fs.inotify.max_user_watches=65536
-#    sudo sysctl -p
-#}
-
-#change_background() {
-#    dconf write /org/mate/desktop/background/picture-filename "'$HOME/dotfiles/backgrounds/$(ls ~/dotfiles/backgrounds | fzf)'"
-#}
-
-
-die () {
-    echo >&2 "$@"
-    exit 1
-}
 
 addToPath() {
     if [[ "$PATH" != *"$1"* ]]; then
@@ -38,15 +14,3 @@ addToPathFront() {
     fi
 }
 
-commitDotFiles() {
-    pushd $DOTFILES
-    pushd personal
-    git add .
-    git commit -am "automagic messaging from me in the past."
-    git push origin master
-    popd
-    git add .
-    git commit -am "automagic messaging from me in the past."
-    git push origin master
-    popd
-}

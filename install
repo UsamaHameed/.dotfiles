@@ -19,15 +19,5 @@ do
     stow $folder
 done
 
-if [[ $1 == "work" ]]; then
-    echo "installing dotfiles for work"
-
-    echo "# work related config below" >> ~/.zshrc
-    cat ./work/.zshrc >> ~/.zshrc
-
-    echo "# work related config below" >> ~/.zsh_profile
-    cat ./work/.zshrc >> ~/.zsh_profile
-fi
-
 popd
 

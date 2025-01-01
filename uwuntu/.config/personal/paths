@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
 addToPathFront /home/usama/n/bin
-addToPathFront $DENO_INSTALL
+
 addToPath /home/usama/personal/lua-language-server/bin/Linux
 addToPath /usr/local/go/bin
 addToPath $GOPATH/bin
-addToPath $HOME/work/wrapper
+
 addToPath $HOME/.yarn/bin
 addToPath /usr/lib/llvm-8/bin
-addToPath $HOME/personal/uhh/build
+
 addToPath $HOME/.cargo/bin
 addToPath $HOME/.rustup
 
+addToPathFront $HOME/.local/.npm-global/bin
+addToPathFront $HOME/.local/bin
+addToPathFront $HOME/.local/go/bin
+addToPathFront $HOME/.local/scripts
+addToPathFront $HOME/go/bin
